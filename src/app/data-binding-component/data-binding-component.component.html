@@ -1,0 +1,39 @@
+<div class="myFirstChallenge"> 
+<h1>Data Binding Challenge</h1>
+
+<!--1. A text input field with Two-Way Binding to a variables called  name and email.--> 
+
+<label for="name">Name: </label> 
+<input type="text" id=name [(ngModel)]="name" placeholder="Enter your name"> 
+
+<br><br>
+
+<label for="email">Email: </label> 
+<input type="text" id="name" [(ngModel)]="email" placeholder="Enter your email"> <br>
+
+<!--2. An image element with a source attribute that is bound to a variable called imageUrl.-->
+<!--3. Below the image, display a checkbox labeled Hide Image. --> 
+
+<div>
+    <h2>Welcome to Angular</h2>
+    <img [attr.src]="imageUrl" [hidden]="hideImage"  [attr.width]="200">
+</div>
+
+<label>
+    <input type="checkbox" [(ngModel)]="hideImage"> Hide Image
+</label>
+
+<!--4. A button labeled Toggle Color. When clicked, it should toggle the background color
+of a div element between red and blue using Class Binding.-->
+
+<div [class.special]="isSpecial">
+    <p> Result</p>
+</div>
+
+<!--wrap the buttons in a <div> element-->
+
+<div class="display">
+<button (click)="logInput()">Log Input</button>
+<button (click)="toggleSpecial()"> Toggle Color </button>
+</div>
+</div>

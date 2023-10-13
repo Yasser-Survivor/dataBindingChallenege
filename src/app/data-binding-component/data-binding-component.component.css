@@ -1,0 +1,26 @@
+.myFirstChallenge{
+    width: 30%;
+    margin: auto;
+    padding: 2rem;
+  
+  background-color: rgb(184, 184, 175);
+  border: 5px;
+  border-radius: 10px;
+}
+img{
+    margin-left: 60px;
+}
+.active {
+    background-color: #08bd0e;
+    color: white;
+  }
+.special {
+    background-color: rgb(169, 47, 10);
+    font-weight: bold;
+}
+.display{
+    display: flex;
+}
+button {
+    margin-right: 10px; /* Adjust the value to control the amount of space between buttons */
+  }
